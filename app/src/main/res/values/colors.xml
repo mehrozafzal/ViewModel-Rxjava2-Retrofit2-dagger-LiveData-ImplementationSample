@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //THEME COLORS
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    //EXTRA COLORS
+    <color name="colorWhite">#FFFFFF</color>
+
+
+    //INTRO THEME COLORS
+    <color name="intro_color1">#514A9D</color>
+    <color name="intro_color2">#FFC371</color>
+    <color name="intro_color3">#00bf8f</color>
+</resources>
