@@ -1,7 +1,6 @@
 package com.karobar.karobarcompany.Global.ApplicationConstants.FragmentConstants;
 
-import com.cinvoc.mehroz.wyse.Model.RouteModel;
-import com.cinvoc.mehroz.wyse.Rest.Response.OrdersResponse.Order;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +40,7 @@ public final class FragmentVariables {
     }
 
     public static final class HomeFragments {
-        public static final ArrayList<RouteModel> routeList = new ArrayList<>();
-        public static  List<Order> routePlannerList = new ArrayList<>();
+
         public static final String ROUTE_PLANNER_FRAG_TAG = "ROUTE_PLANNER_FRAG";
         public static final String MAP_DELIVERY_LIST_FRAGMENT = "MAP_ORDER_LIST_FRAG";
         public static final String ORDER_DETAIL_FRAGMENT = "ORDER_DETAIL_FRAG";

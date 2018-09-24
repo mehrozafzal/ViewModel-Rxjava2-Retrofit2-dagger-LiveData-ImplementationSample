@@ -7,6 +7,7 @@
 
     //EXTRA COLORS
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#e8e8e8</color>
 
 
     //INTRO THEME COLORS

@@ -2,7 +2,7 @@
     <string name="app_name">KarobarCompany</string>
 
     //APP INTRO
-    <string name="title1">Get your Order on your phone</string>
+    <string name="title1">Receive order on your phone</string>
     <string name="description1">Get your order without visiting every other distributor. Just wait for the order to be placed by the distributor and you are good to go</string>
 
     <string name="title2">Manage your workers</string>
@@ -12,4 +12,6 @@
     <string name="title3">Showcase your products</string>
     <string name="description3">Make a gallery of the products you will be delivering so the distributors can see what products you are actually supplying</string>
     <string name="login_hint_email">Email</string>
+    <string name="karobar_title">Karobar</string>
+    <string name="login_email_address">Email address</string>
 </resources>

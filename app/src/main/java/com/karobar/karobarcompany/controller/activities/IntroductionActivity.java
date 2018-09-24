@@ -29,8 +29,6 @@ public class IntroductionActivity extends AppIntro {
         showSkipButton(true);
         setProgressButtonEnabled(true);
         setNextArrowColor(getResources().getColor(R.color.colorWhite));
-        setVibrate(true);
-        setVibrateIntensity(30);
     }
 
     @Override
