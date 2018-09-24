@@ -14,4 +14,5 @@
     <string name="login_hint_email">Email</string>
     <string name="karobar_title">Karobar</string>
     <string name="login_email_address">Email address</string>
+    <string name="app_title">Karobar</string>
 </resources>
