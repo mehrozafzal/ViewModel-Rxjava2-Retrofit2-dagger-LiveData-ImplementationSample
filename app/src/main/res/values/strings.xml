@@ -11,8 +11,10 @@
 
     <string name="title3">Showcase your products</string>
     <string name="description3">Make a gallery of the products you will be delivering so the distributors can see what products you are actually supplying</string>
-    <string name="login_hint_email">Email</string>
     <string name="karobar_title">Karobar</string>
     <string name="login_email_address">Email address</string>
+    <string name="login_password">Password</string>
     <string name="app_title">Karobar</string>
+    <string name="login_remember_password">Remember password</string>
+    <string name="login_registerBtn_text">Register</string>
 </resources>

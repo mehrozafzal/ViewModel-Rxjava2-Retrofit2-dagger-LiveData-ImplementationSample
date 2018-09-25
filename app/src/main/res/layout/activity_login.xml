@@ -1,44 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gradient_background">
 
     <LinearLayout
+        android:id="@+id/loginActivity_logoHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/karobar_logo"
-            android:contentDescription="@null"/>
+            android:contentDescription="@null"
+            android:src="@drawable/karobar_logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_title"
             android:layout_gravity="center"
+            android:text="@string/app_title"
+            android:textColor="@color/secondary_text"
             android:textSize="@dimen/text_xLarge"
+            android:textStyle="bold"
             android:typeface="sans"
-            android:textStyle="bold"/>
+            android:visibility="visible" />
     </LinearLayout>
-
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/loginActivity_input_layout"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/loginActivity_logoHeader"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            style="@style/horizontal_linear_layout">
+        <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
 
+            <ImageView
+                style="@style/loginActivity_imageView"
+                android:src="@drawable/ic_person_outline_black_24dp" />
+
+            <EditText
+                style="@style/loginActivity_editText"
+                android:hint="@string/login_email_address"
+                android:inputType="textEmailAddress" />
         </LinearLayout>
 
+        <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
+
+            <ImageView
+                style="@style/loginActivity_imageView"
+                android:src="@drawable/ic_lock_outline_black_24dp" />
+
+            <EditText
+                style="@style/loginActivity_editText"
+                android:hint="@string/login_password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_remember_password"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_navigate_next_white"
+                app:fabSize="normal" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/login_registerBtn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
+
 
 </RelativeLayout>
