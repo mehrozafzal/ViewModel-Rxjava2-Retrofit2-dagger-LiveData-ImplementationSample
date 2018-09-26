@@ -17,4 +17,5 @@
     <string name="app_title">Karobar</string>
     <string name="login_remember_password">Remember password</string>
     <string name="login_registerBtn_text">Register</string>
+    <string name="register_contact">Contact</string>
 </resources>
