@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/app_title"
-            android:textColor="@color/secondary_text"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/text_xLarge"
             android:textStyle="bold"
             android:typeface="sans"
@@ -105,7 +105,7 @@
         </RelativeLayout>
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
