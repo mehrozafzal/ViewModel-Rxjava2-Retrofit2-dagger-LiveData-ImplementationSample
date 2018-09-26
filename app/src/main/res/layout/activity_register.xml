@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_gradient_background">
+
+
+    <ImageView
+        android:id="@+id/generalBackButton"
+        style="@style/back_button_style" />
+
 
     <LinearLayout
         android:id="@+id/registerActivity_logoHeader"
@@ -13,8 +20,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
@@ -29,8 +36,43 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/registerActivity_logoHeader"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
         android:orientation="vertical">
+
+        <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
+
+            <ImageView
+                style="@style/loginActivity_imageView"
+                android:src="@drawable/ic_person_outline_black_24dp" />
+
+            <EditText
+                style="@style/loginActivity_editText"
+                android:hint="@string/register_name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
+
+            <ImageView
+                style="@style/loginActivity_imageView"
+                android:src="@drawable/ic_person_outline_black_24dp" />
+
+            <EditText
+                style="@style/loginActivity_editText"
+                android:hint="@string/register_company_name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
+
+            <ImageView
+                style="@style/loginActivity_imageView"
+                android:src="@drawable/ic_person_outline_black_24dp" />
+
+            <EditText
+                style="@style/loginActivity_editText"
+                android:hint="Address"
+                android:inputType="text" />
+        </LinearLayout>
 
         <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
 
@@ -70,17 +112,16 @@
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/registerActivity_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="35dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/registerActivity_input_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_navigate_next_white"
-        app:fabSize="normal"
-        android:layout_alignParentEnd="true"/>
+        app:fabSize="normal" />
 
 </RelativeLayout>

@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".controller.activities.LoginActivity" />
         <activity android:name=".controller.activities.RegisterActivity" />
-        <activity android:name=".controller.activities.IntroductionActivity"></activity>
+        <activity android:name=".controller.activities.IntroductionActivity"/>
+        <activity android:name=".controller.activities.BaseActivity"/>
     </application>
 
 </manifest>

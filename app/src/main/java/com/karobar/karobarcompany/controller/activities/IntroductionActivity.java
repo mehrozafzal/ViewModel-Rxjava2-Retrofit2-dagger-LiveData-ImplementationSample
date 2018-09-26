@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
@@ -18,7 +20,8 @@ public class IntroductionActivity extends AppIntro {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setFadeAnimation();
         addSlide(AppIntroFragment.newInstance(getResources().getString(R.string.title1), getResources().getString(R.string.description1), R.drawable.ic_karobar_smartphone, getResources().getColor(R.color.intro_color1)));
         addSlide(AppIntroFragment.newInstance(getResources().getString(R.string.title2), getResources().getString(R.string.description2), R.drawable.ic_karobar_manage, getResources().getColor(R.color.intro_color2)));

@@ -1,5 +1,8 @@
 package com.karobar.karobarcompany.controller.activities;
 
+import android.view.Window;
+import android.view.WindowManager;
+
 import com.daimajia.androidanimations.library.Techniques;
 import com.karobar.karobarcompany.Global.SharedPrefConstants.SharedPrefsVariables;
 import com.karobar.karobarcompany.R;
@@ -14,6 +17,8 @@ public class SplashActivity extends AwesomeSplash {
     @Override
     public void initSplash(ConfigSplash configSplash) {
 
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         configSplash.setBackgroundColor(R.color.colorWhite);
         configSplash.setAnimCircularRevealDuration(1000);
         configSplash.setRevealFlagX(Flags.REVEAL_RIGHT);

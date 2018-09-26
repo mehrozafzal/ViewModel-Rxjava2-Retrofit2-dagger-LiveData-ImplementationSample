@@ -18,4 +18,6 @@
     <string name="login_remember_password">Remember password</string>
     <string name="login_registerBtn_text">Register</string>
     <string name="register_contact">Contact</string>
+    <string name="register_name">Name</string>
+    <string name="register_company_name">Company name</string>
 </resources>
