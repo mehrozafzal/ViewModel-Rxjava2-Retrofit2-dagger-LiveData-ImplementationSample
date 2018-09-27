@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/registerActivity_input_layout"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:clickable="true"
         android:focusable="true"

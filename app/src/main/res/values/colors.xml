@@ -15,4 +15,8 @@
     <color name="intro_color1">#514A9D</color>
     <color name="intro_color2">#FFC371</color>
     <color name="intro_color3">#00bf8f</color>
+
+    //NAVIGATION DRAWER COLORS
+    <color name="nav_primary_dark_color">#4e54c8</color>
+    <color name="nav_primary_color">#8f94fb</color>
 </resources>

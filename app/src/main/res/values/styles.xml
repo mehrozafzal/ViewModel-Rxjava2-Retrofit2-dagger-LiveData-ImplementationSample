@@ -8,6 +8,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="back_button_style">
@@ -19,9 +22,15 @@
     </style>
 
     <style name="NavigationTheme" parent="AppTheme">
-        <item name="android:listDivider">@drawable/navigation_view_divider_bg</item>
+        <item name="android:listDivider">@color/nav_primary_dark_color</item>
         <!--<item name="android:padding">8dp</item>-->
         <!--<item name="listPreferredItemHeightSmall">35dp</item>&lt;!&ndash; menu item height- vary as u need &ndash;&gt;-->
     </style>
+
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">false</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
 
 </resources>

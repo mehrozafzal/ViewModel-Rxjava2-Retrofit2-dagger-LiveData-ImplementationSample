@@ -17,18 +17,41 @@
             android:icon="@drawable/ic_reorder_black_24dp"
             android:title="@string/menu_order_list" />
 
+        <item
+            android:id="@+id/nav_menu_supervisor_list"
+            android:icon="@drawable/ic_reorder_black_24dp"
+            android:title="@string/menu_supervisor_list" />
 
+        <item
+            android:id="@+id/nav_menu_delivery_man_list"
+            android:icon="@drawable/ic_reorder_black_24dp"
+            android:title="@string/menu_delivery_man_list" />
+        <item
+            android:id="@+id/nav_menu_add_supervisor"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/menu_add_supervisor" />
+        <item
+            android:id="@+id/nav_menu_add_delivery_man"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/menu_add_delivery_man" />
         <item
             android:id="@+id/nav_menu_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/menu_settings"
             android:visible="true" />
     </group>
-
-    <item
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About" />
+        <item
         android:id="@+id/nav_menu_logout"
         android:icon="@drawable/ic_remove_circle_black_24dp"
         android:title="@string/menu_logout" />
+    </group>
 
 
 </menu>
