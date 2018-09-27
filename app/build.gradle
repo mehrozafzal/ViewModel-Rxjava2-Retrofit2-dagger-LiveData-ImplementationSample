@@ -33,6 +33,7 @@ dependencies {
     implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
     implementation "com.android.support:recyclerview-v7:$support_version"
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'net.alhazmy13.MediaPicker:libary:2.4.4'
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
     annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
     implementation "com.jakewharton:butterknife:$butterknife_version"

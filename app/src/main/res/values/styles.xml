@@ -1,5 +1,7 @@
 <resources>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -14,6 +16,12 @@
         <item name="android:backgroundTint">@color/colorPrimaryDark</item>
         <item name="android:background">@drawable/ic_arrow_back_white</item>
         <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:listDivider">@drawable/navigation_view_divider_bg</item>
+        <!--<item name="android:padding">8dp</item>-->
+        <!--<item name="listPreferredItemHeightSmall">35dp</item>&lt;!&ndash; menu item height- vary as u need &ndash;&gt;-->
     </style>
 
 </resources>

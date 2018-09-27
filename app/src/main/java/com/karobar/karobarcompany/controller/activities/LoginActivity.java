@@ -1,5 +1,6 @@
 package com.karobar.karobarcompany.controller.activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import com.karobar.karobarcompany.utils.IntentHelperClass;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,12 +29,17 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
 
     @OnClick({R.id.loginActivity_fab, R.id.loginActivity_registerBtn})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.loginActivity_fab:
-                //TODO open app
+                IntentHelperClass.getInstance(this).moveToNextActivity(this, HomeActivity.class, null);
                 break;
             case R.id.loginActivity_registerBtn:
                 IntentHelperClass.getInstance(this).moveToNextActivity(this, RegisterActivity.class, null);
