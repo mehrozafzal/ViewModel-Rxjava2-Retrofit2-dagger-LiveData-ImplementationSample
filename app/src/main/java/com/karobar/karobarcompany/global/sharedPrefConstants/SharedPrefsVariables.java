@@ -1,4 +1,4 @@
-package com.karobar.karobarcompany.Global.SharedPrefConstants;
+package com.karobar.karobarcompany.global.sharedPrefConstants;
 
 /**
  * Created by Mezzy on 10/22/2017.

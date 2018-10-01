@@ -1,4 +1,4 @@
-package com.karobar.karobarcompany.Global.ApplicationConstants.ActitvityConstants;
+package com.karobar.karobarcompany.global.applicationConstants.ActitvityConstants;
 
 /**
  * Created by mehroz.afzal on 2/8/2018.

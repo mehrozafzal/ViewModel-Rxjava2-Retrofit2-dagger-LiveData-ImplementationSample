@@ -15,19 +15,18 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.NavigationView
-        android:background="@drawable/login_gradient_background"
         android:id="@+id/nav_view"
-        android:theme="@style/NavigationTheme"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header_layout"
-        app:menu="@menu/nav_drawer_menu"
+        android:background="@drawable/custom_login_background"
         android:fitsSystemWindows="true"
+        android:theme="@style/NavigationTheme"
+        app:headerLayout="@layout/nav_header_layout"
         app:itemBackground="@drawable/drawer_item_selector"
         app:itemIconTint="@color/secondary_text"
         app:itemTextColor="@color/secondary_text"
-        />
+        app:menu="@menu/nav_drawer_menu" />
 
 </android.support.v4.widget.DrawerLayout>
 

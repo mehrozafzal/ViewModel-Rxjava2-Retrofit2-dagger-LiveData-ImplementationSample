@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_gradient_background">
+    android:background="@drawable/custom_login_background">
 
     <LinearLayout
         android:id="@+id/loginActivity_logoHeader"
@@ -19,18 +19,18 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:contentDescription="@null"
-            android:src="@drawable/karobar_logo" />
+            android:src="@drawable/karobar_logo_2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/app_title"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/secondary_text"
             android:textSize="@dimen/text_xLarge"
             android:textStyle="bold"
             android:typeface="sans"
-            android:visibility="visible" />
+            android:visibility="gone" />
     </LinearLayout>
 
 
@@ -41,7 +41,7 @@
         android:layout_below="@+id/loginActivity_logoHeader"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:orientation="vertical">
 
         <LinearLayout style="@style/loginActivity_horizontal_linearLayout">
@@ -81,6 +81,7 @@
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.AppCompatCheckBox
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -88,7 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login_remember_password"
-                    android:textColor="@color/secondary_text" />
+                    android:textColor="@color/secondary_text_dark" />
             </LinearLayout>
 
             <android.support.design.widget.FloatingActionButton
@@ -97,7 +98,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="16dp"
-                android:backgroundTint="@color/colorPrimaryDark"
                 android:clickable="true"
                 android:focusable="true"
                 android:src="@drawable/ic_navigate_next_white"
@@ -111,7 +111,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/custom_button"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/login_registerBtn_text"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite" />

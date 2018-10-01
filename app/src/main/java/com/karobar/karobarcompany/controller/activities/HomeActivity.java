@@ -14,6 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.karobar.karobarcompany.R;
+import com.karobar.karobarcompany.utils.IntentHelperClass;
 
 import java.util.Objects;
 
@@ -74,7 +75,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.setScrimColor(getResources().getColor(android.R.color.transparent));
         toggle.syncState();
         navView.setNavigationItemSelectedListener(this);
-    //    navView.setCheckedItem(R.id.nav_menu_home);
+        //    navView.setCheckedItem(R.id.nav_menu_home);
     }
 
     @Override
@@ -84,6 +85,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        switch (item.getItemId()) {
+            case R.id.nav_menu_order_list: {
+                IntentHelperClass.getInstance(this).moveToNextActivity(this, OrderActivity.class, null);
+            }
+            break;
+            case R.id.nav_menu_product_list: {
+                IntentHelperClass.getInstance(this).moveToNextActivity(this, ProductActivity.class, null);
+            }
+            break;
+        }
+        return true;
     }
 }

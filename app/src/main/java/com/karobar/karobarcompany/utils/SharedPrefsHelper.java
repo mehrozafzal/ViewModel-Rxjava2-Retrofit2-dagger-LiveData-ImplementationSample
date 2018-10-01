@@ -6,7 +6,7 @@ import android.content.Context;
 import com.google.gson.Gson;
 import com.pddstudio.preferences.encrypted.EncryptedPreferences;
 
-import static com.karobar.karobarcompany.Global.SharedPrefConstants.SharedPrefsVariables.APP_PREFERENCE_PASSWORD;
+import static com.karobar.karobarcompany.global.sharedPrefConstants.SharedPrefsVariables.APP_PREFERENCE_PASSWORD;
 
 
 /**

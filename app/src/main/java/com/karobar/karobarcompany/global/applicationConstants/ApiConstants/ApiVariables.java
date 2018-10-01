@@ -1,4 +1,4 @@
-package com.karobar.karobarcompany.Global.ApplicationConstants.ApiConstants;
+package com.karobar.karobarcompany.global.applicationConstants.ApiConstants;
 
 public final class ApiVariables {
 

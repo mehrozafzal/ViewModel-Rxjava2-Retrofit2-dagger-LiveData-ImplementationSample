@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_gradient_background">
+    android:background="@drawable/custom_login_background">
 
 
     <ImageView
@@ -26,7 +26,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:contentDescription="@null"
-            android:src="@drawable/karobar_logo" />
+            android:src="@drawable/karobar_logo_2" />
     </LinearLayout>
 
 
@@ -42,7 +42,7 @@
 
             <ImageView
                 style="@style/loginActivity_imageView"
-                android:src="@drawable/ic_person_outline_black_24dp" />
+                android:src="@drawable/ic_mood_black_24dp" />
 
             <EditText
                 style="@style/loginActivity_editText"
@@ -54,7 +54,7 @@
 
             <ImageView
                 style="@style/loginActivity_imageView"
-                android:src="@drawable/ic_person_outline_black_24dp" />
+                android:src="@drawable/ic_mood_black_24dp" />
 
             <EditText
                 style="@style/loginActivity_editText"
@@ -66,7 +66,7 @@
 
             <ImageView
                 style="@style/loginActivity_imageView"
-                android:src="@drawable/ic_person_outline_black_24dp" />
+                android:src="@drawable/ic_location_on_black_24dp" />
 
             <EditText
                 style="@style/loginActivity_editText"
@@ -118,7 +118,7 @@
         android:layout_below="@+id/registerActivity_input_layout"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorAccent"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_navigate_next_white"

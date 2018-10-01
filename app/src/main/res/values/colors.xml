@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     //THEME COLORS
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#3F51B5</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#6441A5</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimaryDark">#2a0845</color>
+    <!--<color name="colorPrimaryMiddle">#412F48</color>-->
+    <!--<color name="colorAccent">#3F51B5</color>-->
+    <color name="colorAccent">#6441A5</color>
 
     //EXTRA COLORS
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrey">#e8e8e8</color>
     <color name="secondary_text">#c6c6c6</color>
+    <color name="secondary_text_dark">#a6a6a6</color>
+    <color name="colorSeparator">#30d1d5</color>
+
 
 
     //INTRO THEME COLORS
@@ -17,6 +24,6 @@
     <color name="intro_color3">#00bf8f</color>
 
     //NAVIGATION DRAWER COLORS
-    <color name="nav_primary_dark_color">#4e54c8</color>
-    <color name="nav_primary_color">#8f94fb</color>
+    <color name="nav_primary_dark_color">@color/colorPrimaryDark</color>
+    <color name="nav_primary_color">@color/colorPrimary</color>
 </resources>

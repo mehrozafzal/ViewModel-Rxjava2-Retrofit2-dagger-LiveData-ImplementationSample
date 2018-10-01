@@ -21,6 +21,8 @@
         <activity android:name=".controller.activities.IntroductionActivity" />
         <activity android:name=".controller.activities.BaseActivity" />
         <activity android:name=".controller.activities.HomeActivity" />
+        <activity android:name=".controller.activities.OrderActivity" />
+        <activity android:name=".controller.activities.ProductActivity"></activity>
     </application>
 
 </manifest>

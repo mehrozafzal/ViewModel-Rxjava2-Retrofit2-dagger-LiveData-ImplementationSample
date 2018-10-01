@@ -37,11 +37,28 @@
     <string name="header_active_orders">Active Orders</string>
     <string name="dummy_pending_order_value_35">35</string>
     <string name="header_pending_orders">Pending Orders</string>
-
+    <string name="dummy_location">176 2B-2 Johar Town Lahore</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="menu_supervisor_list">Supervisor list</string>
     <string name="menu_delivery_man_list">Delivery man list</string>
     <string name="menu_add_supervisor">Add supervisor</string>
     <string name="menu_add_delivery_man">Add delivery man</string>
+    <string name="route_btn_view_order">View Order</string>
+    <string name="view_route_btn">View Route</string>
+    <string name="dummy_retailer_name">Fork n Knives</string>
+    <string name="orderList_assign_order">Assign Order</string>
+    <string name="dummy_product_name">Coca Cola Mint</string>
+    <string name="dummy_price">250/-</string>
+    <string name="product_list_price_label">Price</string>
+    <string name="dummy_quantity">250 ml</string>
+    <string name="dummy_quantity_label">Quantity</string>
+    <string name="add_product_dialog">ADD PRODUCT</string>
+    <string name="product_name_dialog">Product name</string>
+    <string name="product_price_dialog">Product Price</string>
+    <string name="product_quantity_dialog">Product Quantity</string>
+    <string name="product_description_dialog">Product Description</string>
+    <string name="add_btn_dialog">Add</string>
+    <string name="productList_productDetail_btn">Product Detail</string>
+    <string name="productList_editProduct_btn">Edit Product</string>
 </resources>

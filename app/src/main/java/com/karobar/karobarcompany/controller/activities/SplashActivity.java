@@ -4,7 +4,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.daimajia.androidanimations.library.Techniques;
-import com.karobar.karobarcompany.Global.SharedPrefConstants.SharedPrefsVariables;
+import com.karobar.karobarcompany.global.sharedPrefConstants.SharedPrefsVariables;
 import com.karobar.karobarcompany.R;
 import com.karobar.karobarcompany.utils.IntentHelperClass;
 import com.karobar.karobarcompany.utils.SharedPrefsHelper;
