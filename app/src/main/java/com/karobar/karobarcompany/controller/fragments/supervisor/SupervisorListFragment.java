@@ -1,4 +1,4 @@
-package com.karobar.karobarcompany.controller.fragments.product;
+package com.karobar.karobarcompany.controller.fragments.supervisor;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class EditProductFragment extends Fragment {
+public class SupervisorListFragment extends Fragment {
 
     @Nullable
     @Override

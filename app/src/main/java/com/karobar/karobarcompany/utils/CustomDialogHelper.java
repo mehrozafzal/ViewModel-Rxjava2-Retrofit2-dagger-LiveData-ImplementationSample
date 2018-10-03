@@ -15,7 +15,6 @@ public class CustomDialogHelper {
 
     private static CustomDialogHelper customDialogHelper;
 
-
     public static CustomDialogHelper getInstance() {
         if (customDialogHelper == null) {
             synchronized (CustomDialogHelper.class) {
@@ -41,6 +40,7 @@ public class CustomDialogHelper {
 
         if (alertDialog.getWindow() != null)
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
 
 //        dialogGalleryButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -144,6 +144,5 @@ public class CustomDialogHelper {
 //        });
         alertDialog.show();
     }
-
 
 }

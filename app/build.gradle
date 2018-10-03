@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    dataBinding {
+        enabled = true
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.karobar.karobarcompany"
@@ -35,6 +38,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'net.alhazmy13.MediaPicker:libary:2.4.4'
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    implementation 'com.android.support:support-v4:27.1.1'
     annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
     implementation "com.jakewharton:butterknife:$butterknife_version"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife_version"

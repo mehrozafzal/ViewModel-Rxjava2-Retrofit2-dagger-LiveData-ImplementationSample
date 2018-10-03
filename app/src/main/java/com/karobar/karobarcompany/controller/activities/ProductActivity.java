@@ -12,8 +12,6 @@ import android.widget.ImageView;
 import com.karobar.karobarcompany.global.applicationConstants.ActitvityConstants.ActivityVariables;
 import com.karobar.karobarcompany.global.applicationConstants.FragmentConstants.FragmentVariables;
 import com.karobar.karobarcompany.R;
-import com.karobar.karobarcompany.controller.fragments.product.EditProductFragment;
-import com.karobar.karobarcompany.controller.fragments.product.ProductDetailFragment;
 import com.karobar.karobarcompany.controller.fragments.product.ProductListFragment;
 
 import butterknife.BindView;

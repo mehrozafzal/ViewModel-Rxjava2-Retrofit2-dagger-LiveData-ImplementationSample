@@ -22,7 +22,9 @@
         <activity android:name=".controller.activities.BaseActivity" />
         <activity android:name=".controller.activities.HomeActivity" />
         <activity android:name=".controller.activities.OrderActivity" />
-        <activity android:name=".controller.activities.ProductActivity"></activity>
+        <activity android:name=".controller.activities.ProductActivity" />
+        <activity android:name=".controller.activities.SupervisorActivity" />
+        <activity android:name=".controller.activities.DeliveryManActivity"></activity>
     </application>
 
 </manifest>

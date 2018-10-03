@@ -11,6 +11,8 @@
         <item name="android:textAlignment" tools:ignore="NewApi">textStart</item>
         <item name="android:padding">12dp</item>
         <item name="android:textSize">17sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/custom_dialog_edittext_bg</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginLeft">@dimen/margin_large</item>

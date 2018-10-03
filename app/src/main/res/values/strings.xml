@@ -55,10 +55,16 @@
     <string name="dummy_quantity_label">Quantity</string>
     <string name="add_product_dialog">ADD PRODUCT</string>
     <string name="product_name_dialog">Product name</string>
-    <string name="product_price_dialog">Product Price</string>
+    <string name="product_price_dialog">Price Per Carton</string>
     <string name="product_quantity_dialog">Product Quantity</string>
     <string name="product_description_dialog">Product Description</string>
     <string name="add_btn_dialog">Add</string>
     <string name="productList_productDetail_btn">Product Detail</string>
     <string name="productList_editProduct_btn">Edit Product</string>
+    <string name="dialog_product_detail">Product Detail</string>
+    <string name="dialog_hint_price_per_container">Price Per Carton</string>
+    <string name="dialog_edit_product_title">Edit Product</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
