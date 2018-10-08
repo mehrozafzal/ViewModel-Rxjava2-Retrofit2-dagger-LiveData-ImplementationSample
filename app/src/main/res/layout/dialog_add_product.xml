@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="13dp"
+    android:background="@drawable/custom_dialog_bg"
     android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,6 +34,7 @@
         </RelativeLayout>
 
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/colorSeparator" />

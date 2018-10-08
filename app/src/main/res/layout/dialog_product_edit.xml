@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true"
+    android:background="@drawable/custom_dialog_bg"
     android:padding="13dp">
 
     <LinearLayout
@@ -34,6 +35,7 @@
         </RelativeLayout>
 
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/colorSeparator" />
@@ -62,38 +64,38 @@
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
-                <LinearLayout style="@style/product_detail_linearLayout">
+                <LinearLayout style="@style/add_product_linearLayout">
 
-                    <TextView
+                    <EditText
                         android:id="@+id/productDialog_prodName"
-                        style="@style/product_detail_textView"
+                        style="@style/add_product_editText"
                         android:hint="@string/product_name_dialog"
                         android:inputType="text" />
                 </LinearLayout>
 
-                <LinearLayout style="@style/product_detail_linearLayout">
+                <LinearLayout style="@style/add_product_linearLayout">
 
                     <TextView
                         android:id="@+id/productDialog_prodPrice"
-                        style="@style/product_detail_textView"
+                        style="@style/add_product_editText"
                         android:hint="@string/dialog_hint_price_per_container"
                         android:inputType="text" />
                 </LinearLayout>
 
-                <LinearLayout style="@style/product_detail_linearLayout">
+                <LinearLayout style="@style/add_product_linearLayout">
 
                     <TextView
                         android:id="@+id/productDialog_prodQuantity"
-                        style="@style/product_detail_textView"
+                        style="@style/add_product_editText"
                         android:hint="@string/product_quantity_dialog"
                         android:inputType="text" />
                 </LinearLayout>
 
-                <LinearLayout style="@style/product_detail_linearLayout">
+                <LinearLayout style="@style/add_product_linearLayout">
 
                     <TextView
                         android:id="@+id/productDialog_prodDescription"
-                        style="@style/product_detail_textView"
+                        style="@style/add_product_editText"
                         android:hint="@string/product_description_dialog"
                         android:maxLines="5" />
                 </LinearLayout>

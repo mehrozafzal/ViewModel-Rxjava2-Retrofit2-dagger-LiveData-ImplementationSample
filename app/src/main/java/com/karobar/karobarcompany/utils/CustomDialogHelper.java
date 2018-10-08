@@ -30,18 +30,14 @@ public class CustomDialogHelper {
         Activity activity = (Activity) context;
         LayoutInflater inflater = activity.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_add_product, null);
-
 //        Button dialogGalleryButton = (Button) dialogView.findViewById(R.id.basicSignUpImageDialog_fromGallery);
 //        Button dialogCameraButton = (Button) dialogView.findViewById(R.id.basicSignUpImageDialog_fromCamera);
 //        ImageView dialogCancelButton = (ImageView) dialogView.findViewById(R.id.basicSignUpImageDialog_cancelImage);
         builder.setView(dialogView);
         final AlertDialog alertDialog = builder.create();
         alertDialog.setCanceledOnTouchOutside(false);
-
         if (alertDialog.getWindow() != null)
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-
 //        dialogGalleryButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -71,17 +67,14 @@ public class CustomDialogHelper {
         Activity activity = (Activity) context;
         LayoutInflater inflater = activity.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_product_detail, null);
-
 //        Button dialogGalleryButton = (Button) dialogView.findViewById(R.id.basicSignUpImageDialog_fromGallery);
 //        Button dialogCameraButton = (Button) dialogView.findViewById(R.id.basicSignUpImageDialog_fromCamera);
 //        ImageView dialogCancelButton = (ImageView) dialogView.findViewById(R.id.basicSignUpImageDialog_cancelImage);
         builder.setView(dialogView);
         final AlertDialog alertDialog = builder.create();
         alertDialog.setCanceledOnTouchOutside(false);
-
         if (alertDialog.getWindow() != null)
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
 //        dialogGalleryButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controller.activities.OrderActivity">
+    tools:context=".controller.activities.ProductActivity">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/productActivity_toolbar"
         layout="@layout/custom_toolbar" />
 
     <FrameLayout
