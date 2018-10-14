@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controller.activities.ProductActivity">
+    tools:context=".view.activities.ProductActivity">
 
     <include
         android:id="@+id/productActivity_toolbar"

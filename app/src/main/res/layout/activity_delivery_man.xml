@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controller.activities.DeliveryManActivity">
+    tools:context=".view.activities.DeliveryManActivity">
 
     <include
         android:id="@+id/activityDeliveryMan_toolbar"
