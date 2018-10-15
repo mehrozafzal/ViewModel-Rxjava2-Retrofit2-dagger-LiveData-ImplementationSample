@@ -74,6 +74,8 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:2.13"
     compileOnly 'javax.annotation:jsr250-api:1.0'
     implementation 'javax.inject:javax.inject:1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.0'
+
 
 //    implementation "android.arch.persistence.room:runtime:$room_version"
 //    annotationProcessor "android.arch.persistence.room:compiler:$room_version"

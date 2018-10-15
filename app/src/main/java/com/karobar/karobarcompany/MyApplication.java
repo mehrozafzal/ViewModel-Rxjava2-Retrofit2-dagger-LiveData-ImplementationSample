@@ -3,27 +3,27 @@ package com.karobar.karobarcompany;
 import android.app.Application;
 import android.content.Context;
 
-import com.karobar.karobarcompany.dagger.component.AppComponent;
-import com.karobar.karobarcompany.dagger.component.DaggerAppComponent;
+import com.karobar.karobarcompany.dagger.component.AppActivityComponent;
+import com.karobar.karobarcompany.dagger.component.DaggerAppActivityComponent;
 import com.karobar.karobarcompany.dagger.module.AppModule;
 import com.karobar.karobarcompany.dagger.module.UtilsModule;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class MyApplication extends Application {
-    AppComponent appComponent;
+    AppActivityComponent appActivityComponent;
     Context context;
 
     @Override
     public void onCreate() {
         super.onCreate();
         context = this;
-        appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).utilsModule(new UtilsModule()).build();
+        appActivityComponent = DaggerAppActivityComponent.builder().appModule(new AppModule(this)).utilsModule(new UtilsModule()).build();
         initTypeface();
     }
 
-    public AppComponent getAppComponent() {
-        return appComponent;
+    public AppActivityComponent getAppActivityComponent() {
+        return appActivityComponent;
     }
 
     private void initTypeface() {

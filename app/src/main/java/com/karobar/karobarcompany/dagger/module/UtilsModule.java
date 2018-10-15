@@ -7,8 +7,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.karobar.karobarcompany.constants.UrlConstants;
-import com.karobar.karobarcompany.retrofit.ApiCallInterface;
 import com.karobar.karobarcompany.repository.RemoteRepository;
+import com.karobar.karobarcompany.retrofit.ApiCallInterface;
 import com.karobar.karobarcompany.viewModel.ViewModelFactory;
 
 import java.util.concurrent.TimeUnit;
@@ -19,6 +19,7 @@ import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -55,7 +56,9 @@ public class UtilsModule {
     OkHttpClient getRequestHeader() {
 
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
-
+        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        httpClient.addInterceptor(loggingInterceptor);
         httpClient.addInterceptor(chain -> {
             Request original = chain.request();
             Request request = original.newBuilder().build();

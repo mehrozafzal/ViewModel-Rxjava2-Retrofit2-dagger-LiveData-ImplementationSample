@@ -13,7 +13,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class LoginViewModel extends ViewModel {
     public RemoteRepository remoteRepository;
-    private final MutableLiveData<ApiResponse> responseLiveData = new MutableLiveData<>();
+    private final MutableLiveData<ApiResponse> loginResponseLiveData = new MutableLiveData<>();
 
 
     public LoginViewModel(RemoteRepository remoteRepository) {
@@ -21,7 +21,7 @@ public class LoginViewModel extends ViewModel {
     }
 
     public MutableLiveData<ApiResponse> loginResponse() {
-        return responseLiveData;
+        return loginResponseLiveData;
     }
 
     public void hitLoginApi(SignInRequest signInRequest) {
@@ -29,10 +29,10 @@ public class LoginViewModel extends ViewModel {
         DisposableManagerUtils.add(remoteRepository.executeLogin(signInRequest)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .doOnSubscribe((d) -> responseLiveData.setValue(ApiResponse.loading()))
+                .doOnSubscribe((d) -> loginResponseLiveData.setValue(ApiResponse.loading()))
                 .subscribe(
-                        result -> responseLiveData.setValue(ApiResponse.success(result)),
-                        throwable -> responseLiveData.setValue(ApiResponse.error(throwable))
+                        result -> loginResponseLiveData.setValue(ApiResponse.success(result)),
+                        throwable -> loginResponseLiveData.setValue(ApiResponse.error(throwable))
                 ));
     }
 

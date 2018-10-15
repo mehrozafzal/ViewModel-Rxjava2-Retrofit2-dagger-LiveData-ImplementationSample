@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void initViews() {
         ProgressDialogUtils.getInstance().initProgressDialog(this, "Please wait...");
-        ((MyApplication) getApplication()).getAppComponent().doInjection(this);
+        ((MyApplication) getApplication()).getAppActivityComponent().doInjection(this);
         loginViewModel = ViewModelProviders.of(this, viewModelFactory).get(LoginViewModel.class);
         loginViewModel.loginResponse().observe(this, this::consumeResponse);
     }
@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.loginActivity_fab:
-                processLogin();
+                constructLoginObject();
                 break;
             case R.id.loginActivity_registerBtn:
                 IntentUtils.getInstance(this).moveToNextActivity(this, RegisterActivity.class, null);
@@ -119,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void processLogin() {
+    private void constructLoginObject() {
         Dexter.withActivity(this)
                 .withPermission(Manifest.permission.INTERNET)
                 .withListener(new PermissionListener() {
@@ -127,8 +127,8 @@ public class LoginActivity extends AppCompatActivity {
                     public void onPermissionGranted(PermissionGrantedResponse response) {
                         User user = new User();
                         user.setEmail("mehroz.mehar99@gmail.com");
-                        user.setPassword("mehroz2123330");
-                        user.setAppType("company");
+                        user.setPassword("admin123");
+                        user.setAppType("Company");
                         SignInRequest signInRequest = new SignInRequest();
                         signInRequest.setUser(user);
                         loginViewModel.hitLoginApi(signInRequest);

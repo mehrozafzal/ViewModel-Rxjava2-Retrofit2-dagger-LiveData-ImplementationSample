@@ -45,6 +45,7 @@
                 android:src="@drawable/ic_mood_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_name"
                 style="@style/loginActivity_editText"
                 android:hint="@string/register_name"
                 android:inputType="text" />
@@ -57,6 +58,7 @@
                 android:src="@drawable/ic_mood_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_companyName"
                 style="@style/loginActivity_editText"
                 android:hint="@string/register_company_name"
                 android:inputType="text" />
@@ -69,6 +71,7 @@
                 android:src="@drawable/ic_location_on_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_address"
                 style="@style/loginActivity_editText"
                 android:hint="Address"
                 android:inputType="text" />
@@ -81,6 +84,7 @@
                 android:src="@drawable/ic_person_outline_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_emailAddress"
                 style="@style/loginActivity_editText"
                 android:hint="@string/login_email_address"
                 android:inputType="textEmailAddress" />
@@ -93,6 +97,7 @@
                 android:src="@drawable/ic_lock_outline_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_password"
                 style="@style/loginActivity_editText"
                 android:hint="@string/login_password"
                 android:inputType="textPassword" />
@@ -105,6 +110,7 @@
                 android:src="@drawable/ic_phone_black_24dp" />
 
             <EditText
+                android:id="@+id/registerActivity_contact"
                 style="@style/loginActivity_editText"
                 android:hint="@string/register_contact"
                 android:inputType="phone" />

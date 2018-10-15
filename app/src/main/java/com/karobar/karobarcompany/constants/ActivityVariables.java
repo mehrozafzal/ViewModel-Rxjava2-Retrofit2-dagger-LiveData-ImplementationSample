@@ -8,6 +8,7 @@ public final class ActivityVariables {
 
     public static final class Tags {
         public static final String LOGIN_ACTIVITY_TAG = "LoginActivity";
+        public static final String SIGNUP_ACTIVITY_TAG = "SignUpActivity";
     }
 
     public static final class ToolBarTitle {

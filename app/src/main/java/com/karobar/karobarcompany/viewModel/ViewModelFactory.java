@@ -22,6 +22,8 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
         if (modelClass.isAssignableFrom(LoginViewModel.class)) {
             return (T) new LoginViewModel(remoteRepository);
+        } else if (modelClass.isAssignableFrom(SignUpViewModel.class)) {
+            return (T) new SignUpViewModel(remoteRepository);
         }
         return null;
     }
